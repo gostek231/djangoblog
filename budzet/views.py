@@ -8,6 +8,6 @@ def post_list(request):
 
 def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-    return render(request, 'budzet/post_detail.html', {'posts': post})
+    return render(request, 'budzet/post_detail.html', {'post': post})
 
 
