@@ -7,23 +7,21 @@
     <link rel="stylesheet" href="{% static 'css/budzet.css' %}">
 </head>
     <body>
-        <div>
-            <h1><a href="post_list.html">Witam na stronie bloga!</a></h1>
+        <div class="page-header">
+            <h1><a href="">Witam na stronie bloga!</a></h1>
             <h2>Blog o programowaniu</h2>
-            <h3>Autor: gostek231</h3>
-            <h4>Wszelkie prawa zastreżone</h4>
         </div>
         {% comment "Komentarz autora %}
         Tutaj lista postow
         {% endcomment %}
         {% for post in posts %}
-        <div>
+        <div class="post">
             <p>opublikowany: {{ post.publish_Date }}</p>
             <h2><a href="">{{ post.title }}</a></h2>
             <em>{{ post.text|linebreaksbr }}</em>
         </div>
         {% endfor %}
-        <div>
+        <div class="stopka">
 
         </div>
 </body>

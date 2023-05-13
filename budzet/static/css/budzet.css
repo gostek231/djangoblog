@@ -3,5 +3,12 @@ h1 a,h2 a{
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     padding-left: 30px;
+}
+
+.page-header{
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
 }
