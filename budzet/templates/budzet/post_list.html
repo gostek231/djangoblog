@@ -12,6 +12,9 @@
             <h3>Autor: gostek231</h3>
             <h4>Wszelkie prawa zastreżone</h4>
         </div>
+        {% comment "Komentarz autora %}
+        Tutaj lista postow
+        {% endcomment %}
         {% for post in posts %}
         <div>
             <p>opublikowany: {{ post.publish_Date }}</p>
