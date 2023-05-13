@@ -12,17 +12,15 @@
             <h3>Autor: gostek231</h3>
             <h4>Wszelkie prawa zastreżone</h4>
         </div>
+        {% for post in posts %}
         <div>
-            <p>To jest akapit</p>
-            <em>To jest wyróżniony tekst</em><br>
-            <strong>Tu jest pogrubiony tekst</strong>
+            <p>opublikowany: {{ post.publish_Date }}</p>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <em>{{ post.text|linebreaksbr }}</em>
         </div>
+        {% endfor %}
         <div>
-            <ul>
-                <li>element listy</li>
-                <li>element listy</li>
-                <li>element listy</li>
-            </ul>
+
         </div>
 </body>
 </html>
